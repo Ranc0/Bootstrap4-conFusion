@@ -41,8 +41,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid" alt="">
+                <div class="col-12 col-sm-3 align-self-center text-center">
+                    <img src="img/logo.png" class="img-fluid" alt="">                
+                </div>
+                <div class="col-12 col-sm-3 align-self-center text-center">
+                    <a href="#reservationCard" class="btn btn-sm btn-warning" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -59,7 +62,7 @@
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                    </div>                    
+                    </div>
                 </div>                
             </div>
         </div>
@@ -70,8 +73,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img src="img/buffet.png" alt="uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
+                </div> 
             </div>
         </div>
 
@@ -90,7 +98,71 @@
                 </div>
             </div>
         </div>
+
+        <div id="reservationCard" class="row row-content align-items-center">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="guests" class="col-12 col-md-3 col-form-label ml-3"><strong>Number of Guests</strong></label>
+                                <div class="radio col-md-8 mt-3">
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="1">1
+                                    </label>
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="2">2
+                                    </label>
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="3">3
+                                    </label>
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="4">4
+                                    </label>
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="5">5
+                                    </label>
+                                    <label class="mr-1">
+                                        <input type="radio" class="mr-1" name="guests" value="6">6
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dateAndTime" class="col-12 col-md-3 col-form-label ml-3"><strong>Date and Time</strong></label>
+                                <div class="col-4 col-md-4">
+                                    <div class="input-group align-items-center">
+                                        <input type="text" class="form-control" id="dateInput" name="dateInput"
+                                         placeholder="Date">
+                                        <span>
+                                            <i class="fa fa-calendar ml-1" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <div class="input-group align-items-center">
+                                        <input type="text" class="form-control" id="timeInput" name="timeInput"
+                                         placeholder="Time">
+                                        <span>
+                                            <i class="fa fa-clock-o ml-1" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-md-3 ml-3">&nbsp;</div>
+                                <div class="col-8 col-md-8">
+                                    <button class="btn btn-primary" type="submit">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
     </div>
+
+    
 
     <footer class="footer">
         <div class="container">
